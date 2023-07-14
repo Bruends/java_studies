@@ -1,54 +1,31 @@
-## Enum
-conjunto de constantes.
-ex:  
+
+- A Set of constants.
+- For convention values are write in CAPSLOCK
+- Can have constructor methods and attributes
 
 ```java
-// Seasons.java
-public enum Seasons {  
-	//obs: por convensão escrevemos os valores em "capslock"
-	FALL,  
-	WINTER,  
-	SPRING,  
-	SUMMER;  
-}
-
-// Main.java
-public class Main {  
-	public static void main(String[] args) {  
-		Seasons season =  Seasons.FALL;  
-		  
-		System.out.println(season); //FALL 
-	}  
-}
-
-
-```
-
-enums podem ter atributos.
-ex:
-
-```java
-// podemos incluir o mês inicial de cada estação.
+//Seasons.java
 public enum Seasons {  
 	FALL("March"),  
 	WINTER("June"),  
 	SPRING("September"),  
 	SUMMER("December");  
-
-	// por convenção os atributos dos enums devem ser imútaveis
+	  
 	final String startingMonth;  
 	  
 	Seasons(String startingMonth){  
 		this.startingMonth = startingMonth;  
 	}  
-  
+	  
+	public void describe() {  
+		System.out.println(this + " starts in: " + this.startingMonth);  
+	}  
 }
 
 // Main.java
 public class Main {  
 	public static void main(String[] args) {  
-		Seasons season =  Seasons.FALL;  
-		  
-		System.out.println(season.FALL.startingMonth); //March 
+		Seasons season = Seasons.WINTER;  
+		season.describe(); // WINTER starts in: June  
 	}  
 }
