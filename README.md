@@ -5,5 +5,7 @@ To be used as a cheat sheet
 - [Generics](Generics.md)
 - [DB Connection](DB_Connection.md)
 - [Record](Record.md)
+-  [Algorithms](Algorithms/)
+	- [Binary Search](Algorithms/BinarySearch.md)
 
 

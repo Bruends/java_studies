@@ -1,4 +1,4 @@
-## Connection with DBs 
+# Connection with DBs 
 - Java Database Connectivity (JDBC)
 - An API to connect Java to DBs
 - can throw a `SQLException`

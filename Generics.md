@@ -1,3 +1,5 @@
+# Generics
+
 - Allows a class/method to be more flexible and work with more than one type.
 -  doesn't work with primitive types ( int, char, etc... ).
 	-  but works with the Object counterparts ( Integer, Character, etc... ).
@@ -17,12 +19,12 @@ public class Printer <T>{
 
 // Main.java
 public class Main {  
-		public static void main(String[] args) {  
-			Printer<String> printer = new Printer<>("Attribute");
-		}
-	} 
-}
-````
+	public static void main(String[] args) {  
+		Printer<String> printer = new Printer<>("Attribute");
+	}
+} 
+
+```
 
 #### Inheritance & Interfaces
 ```java

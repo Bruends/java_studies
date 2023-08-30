@@ -1,4 +1,4 @@
-
+# Enum
 - A Set of constants.
 - For convention values are write in CAPSLOCK
 - Can have constructor methods and attributes
